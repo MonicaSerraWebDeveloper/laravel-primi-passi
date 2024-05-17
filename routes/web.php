@@ -26,8 +26,8 @@ Route::get('/', function () {
                 'url' => '/about'
             ],
             [
-                'name' => 'Project',
-                'url' => '/project'
+                'name' => 'Projects',
+                'url' => '/projects'
             ],
             [
                 'name' => 'Contacts',
@@ -52,8 +52,8 @@ Route::get('/about', function() {
                 'url' => '/about'
             ],
             [
-                'name' => 'Project',
-                'url' => '/project'
+                'name' => 'Projects',
+                'url' => '/projects'
             ],
             [
                 'name' => 'Contacts',
@@ -63,4 +63,57 @@ Route::get('/about', function() {
     ];
 
     return view('about', $data);
+});
+
+Route::get('/projects', function() {
+
+    $data = [
+        'items' => [
+            [
+                'name' => 'Home',
+                'url' => '/'
+            ],
+            [
+                'name' => 'About',
+                'url' => '/about'
+            ],
+            [
+                'name' => 'Projects',
+                'url' => '/projects'
+            ],
+            [
+                'name' => 'Contacts',
+                'url' => '/contacts'
+            ]
+        ]
+    ];
+
+    return view('projects', $data);
+});
+
+
+Route::get('/contacts', function() {
+
+    $data = [
+        'items' => [
+            [
+                'name' => 'Home',
+                'url' => '/'
+            ],
+            [
+                'name' => 'About',
+                'url' => '/about'
+            ],
+            [
+                'name' => 'Projects',
+                'url' => '/projects'
+            ],
+            [
+                'name' => 'Contacts',
+                'url' => '/contacts'
+            ]
+        ]
+    ];
+
+    return view('contacts', $data);
 });

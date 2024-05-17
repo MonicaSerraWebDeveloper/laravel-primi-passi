@@ -26,3 +26,17 @@ Route::get('/', function () {
 
     return view('homepage', $data);
 });
+
+Route::get('/about', function() {
+
+    $data = [
+        'items' => [
+            'Home',
+            'About',
+            'Projects',
+            'Contacts',
+        ]
+    ];
+
+    return view('about', $data);
+});

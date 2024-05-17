@@ -16,6 +16,7 @@
 
     <main>
         <h2>Laravel Primi Passi</h2>
+        <a href="/about"><button>About</button></a>
     </main>
     
 </body>

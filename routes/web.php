@@ -17,10 +17,22 @@ Route::get('/', function () {
 
     $data = [
         'items' => [
-            'Home',
-            'About',
-            'Projects',
-            'Contacts',
+            [
+                'name' => 'Home',
+                'url' => '/'
+            ],
+            [
+                'name' => 'About',
+                'url' => '/about'
+            ],
+            [
+                'name' => 'Project',
+                'url' => '/project'
+            ],
+            [
+                'name' => 'Contacts',
+                'url' => '/contacts'
+            ]
         ]
     ];
 
@@ -31,10 +43,22 @@ Route::get('/about', function() {
 
     $data = [
         'items' => [
-            'Home',
-            'About',
-            'Projects',
-            'Contacts',
+            [
+                'name' => 'Home',
+                'url' => '/'
+            ],
+            [
+                'name' => 'About',
+                'url' => '/about'
+            ],
+            [
+                'name' => 'Project',
+                'url' => '/project'
+            ],
+            [
+                'name' => 'Contacts',
+                'url' => '/contacts'
+            ]
         ]
     ];
 

@@ -10,7 +10,7 @@
 
     <header>
         @foreach ($items as $item)
-            <span>{{ $item }}</span>
+            <a href="{{ $item['url'] }}"><span>{{ $item['name'] }}</span></a>
         @endforeach
     </header>
 
